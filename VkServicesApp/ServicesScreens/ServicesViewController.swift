@@ -52,7 +52,6 @@ final class ServicesViewController: UIViewController {
             }
         }
     }
-
     private func setupViews() {
         title = "Сервисы"
         view.backgroundColor = .systemBackground
@@ -76,7 +75,12 @@ final class ServicesViewController: UIViewController {
 
 extension ServicesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 80
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        print("ТЫК")
     }
 }
 

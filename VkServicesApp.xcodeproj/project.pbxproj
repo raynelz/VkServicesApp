@@ -17,6 +17,7 @@
 		EC3CB98A2BB350AF009E214A /* ServicesItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB9892BB350AF009E214A /* ServicesItemsCell.swift */; };
 		EC3CB98C2BB35769009E214A /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB98B2BB35769009E214A /* ServiceModel.swift */; };
 		EC3CB9912BB35A08009E214A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB9902BB35A08009E214A /* NetworkManager.swift */; };
+		EC3CB9982BB36DAB009E214A /* UIImageView+Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB9972BB36DAB009E214A /* UIImageView+Url.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		EC3CB9892BB350AF009E214A /* ServicesItemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesItemsCell.swift; sourceTree = "<group>"; };
 		EC3CB98B2BB35769009E214A /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
 		EC3CB9902BB35A08009E214A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EC3CB9972BB36DAB009E214A /* UIImageView+Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Url.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +67,9 @@
 			isa = PBXGroup;
 			children = (
 				EC3CB9882BB34EB3009E214A /* Application */,
+				EC3CB98D2BB3589F009E214A /* Network Layer */,
 				EC3CB98F2BB35908009E214A /* ServicesScreens */,
 				EC3CB9842BB34C93009E214A /* Extensions */,
-				EC3CB98D2BB3589F009E214A /* Network Layer */,
 				EC3CB9872BB34E9F009E214A /* Resources */,
 			);
 			path = VkServicesApp;
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				EC3CB9852BB34D75009E214A /* UIView+AddSubviews.swift */,
+				EC3CB9972BB36DAB009E214A /* UIImageView+Url.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				EC3CB98C2BB35769009E214A /* ServiceModel.swift in Sources */,
 				EC3CB9712BB34BA4009E214A /* ServicesViewController.swift in Sources */,
 				EC3CB9912BB35A08009E214A /* NetworkManager.swift in Sources */,
+				EC3CB9982BB36DAB009E214A /* UIImageView+Url.swift in Sources */,
 				EC3CB96D2BB34BA4009E214A /* AppDelegate.swift in Sources */,
 				EC3CB96F2BB34BA4009E214A /* SceneDelegate.swift in Sources */,
 				EC3CB98A2BB350AF009E214A /* ServicesItemsCell.swift in Sources */,
