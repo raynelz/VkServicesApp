@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		EC3CB96D2BB34BA4009E214A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB96C2BB34BA4009E214A /* AppDelegate.swift */; };
 		EC3CB96F2BB34BA4009E214A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB96E2BB34BA4009E214A /* SceneDelegate.swift */; };
-		EC3CB9712BB34BA4009E214A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB9702BB34BA4009E214A /* ViewController.swift */; };
-		EC3CB9742BB34BA4009E214A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EC3CB9732BB34BA4009E214A /* Base */; };
+		EC3CB9712BB34BA4009E214A /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB9702BB34BA4009E214A /* ServicesViewController.swift */; };
 		EC3CB9762BB34BA5009E214A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3CB9752BB34BA5009E214A /* Assets.xcassets */; };
 		EC3CB9792BB34BA5009E214A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EC3CB9782BB34BA5009E214A /* Base */; };
+		EC3CB9822BB34BFD009E214A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC3CB9812BB34BFD009E214A /* SnapKit */; };
+		EC3CB9862BB34D75009E214A /* UIView+AddSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB9852BB34D75009E214A /* UIView+AddSubviews.swift */; };
+		EC3CB98A2BB350AF009E214A /* ServicesItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB9892BB350AF009E214A /* ServicesItemsCell.swift */; };
+		EC3CB98C2BB35769009E214A /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB98B2BB35769009E214A /* ServiceModel.swift */; };
+		EC3CB9912BB35A08009E214A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB9902BB35A08009E214A /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC3CB9692BB34BA4009E214A /* VkServicesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkServicesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3CB96C2BB34BA4009E214A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC3CB96E2BB34BA4009E214A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC3CB9702BB34BA4009E214A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC3CB9732BB34BA4009E214A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC3CB9702BB34BA4009E214A /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		EC3CB9752BB34BA5009E214A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC3CB9782BB34BA5009E214A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC3CB97A2BB34BA5009E214A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3CB9852BB34D75009E214A /* UIView+AddSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AddSubviews.swift"; sourceTree = "<group>"; };
+		EC3CB9892BB350AF009E214A /* ServicesItemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesItemsCell.swift; sourceTree = "<group>"; };
+		EC3CB98B2BB35769009E214A /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		EC3CB9902BB35A08009E214A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3CB9822BB34BFD009E214A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,58 @@
 		EC3CB96B2BB34BA4009E214A /* VkServicesApp */ = {
 			isa = PBXGroup;
 			children = (
-				EC3CB96C2BB34BA4009E214A /* AppDelegate.swift */,
-				EC3CB96E2BB34BA4009E214A /* SceneDelegate.swift */,
-				EC3CB9702BB34BA4009E214A /* ViewController.swift */,
-				EC3CB9722BB34BA4009E214A /* Main.storyboard */,
-				EC3CB9752BB34BA5009E214A /* Assets.xcassets */,
-				EC3CB9772BB34BA5009E214A /* LaunchScreen.storyboard */,
-				EC3CB97A2BB34BA5009E214A /* Info.plist */,
+				EC3CB9882BB34EB3009E214A /* Application */,
+				EC3CB98F2BB35908009E214A /* ServicesScreens */,
+				EC3CB9842BB34C93009E214A /* Extensions */,
+				EC3CB98D2BB3589F009E214A /* Network Layer */,
+				EC3CB9872BB34E9F009E214A /* Resources */,
 			);
 			path = VkServicesApp;
+			sourceTree = "<group>";
+		};
+		EC3CB9842BB34C93009E214A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC3CB9852BB34D75009E214A /* UIView+AddSubviews.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EC3CB9872BB34E9F009E214A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC3CB9772BB34BA5009E214A /* LaunchScreen.storyboard */,
+				EC3CB9752BB34BA5009E214A /* Assets.xcassets */,
+				EC3CB97A2BB34BA5009E214A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC3CB9882BB34EB3009E214A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EC3CB96C2BB34BA4009E214A /* AppDelegate.swift */,
+				EC3CB96E2BB34BA4009E214A /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EC3CB98D2BB3589F009E214A /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				EC3CB98B2BB35769009E214A /* ServiceModel.swift */,
+				EC3CB9902BB35A08009E214A /* NetworkManager.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		EC3CB98F2BB35908009E214A /* ServicesScreens */ = {
+			isa = PBXGroup;
+			children = (
+				EC3CB9702BB34BA4009E214A /* ServicesViewController.swift */,
+				EC3CB9892BB350AF009E214A /* ServicesItemsCell.swift */,
+			);
+			path = ServicesScreens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,12 +128,16 @@
 				EC3CB9652BB34BA4009E214A /* Sources */,
 				EC3CB9662BB34BA4009E214A /* Frameworks */,
 				EC3CB9672BB34BA4009E214A /* Resources */,
+				EC3CB9832BB34C05009E214A /* Swiftlint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = VkServicesApp;
+			packageProductDependencies = (
+				EC3CB9812BB34BFD009E214A /* SnapKit */,
+			);
 			productName = VkServicesApp;
 			productReference = EC3CB9692BB34BA4009E214A /* VkServicesApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +166,9 @@
 				Base,
 			);
 			mainGroup = EC3CB9602BB34BA4009E214A;
+			packageReferences = (
+				EC3CB9802BB34BFD009E214A /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = EC3CB96A2BB34BA4009E214A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,34 +185,51 @@
 			files = (
 				EC3CB9762BB34BA5009E214A /* Assets.xcassets in Resources */,
 				EC3CB9792BB34BA5009E214A /* Base in Resources */,
-				EC3CB9742BB34BA4009E214A /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EC3CB9832BB34C05009E214A /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC3CB9652BB34BA4009E214A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC3CB9712BB34BA4009E214A /* ViewController.swift in Sources */,
+				EC3CB9862BB34D75009E214A /* UIView+AddSubviews.swift in Sources */,
+				EC3CB98C2BB35769009E214A /* ServiceModel.swift in Sources */,
+				EC3CB9712BB34BA4009E214A /* ServicesViewController.swift in Sources */,
+				EC3CB9912BB35A08009E214A /* NetworkManager.swift in Sources */,
 				EC3CB96D2BB34BA4009E214A /* AppDelegate.swift in Sources */,
 				EC3CB96F2BB34BA4009E214A /* SceneDelegate.swift in Sources */,
+				EC3CB98A2BB350AF009E214A /* ServicesItemsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC3CB9722BB34BA4009E214A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC3CB9732BB34BA4009E214A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC3CB9772BB34BA5009E214A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,11 +368,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X6KB2A8YM9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VkServicesApp/Info.plist;
+				INFOPLIST_FILE = VkServicesApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,11 +396,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X6KB2A8YM9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VkServicesApp/Info.plist;
+				INFOPLIST_FILE = VkServicesApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +438,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC3CB9802BB34BFD009E214A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC3CB9812BB34BFD009E214A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC3CB9802BB34BFD009E214A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC3CB9612BB34BA4009E214A /* Project object */;
 }
