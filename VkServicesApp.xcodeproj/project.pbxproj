@@ -18,6 +18,8 @@
 		EC3CB98C2BB35769009E214A /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB98B2BB35769009E214A /* ServiceModel.swift */; };
 		EC3CB9912BB35A08009E214A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB9902BB35A08009E214A /* NetworkManager.swift */; };
 		EC3CB9982BB36DAB009E214A /* UIImageView+Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB9972BB36DAB009E214A /* UIImageView+Url.swift */; };
+		ECC046412BB4B3750036C05F /* ServiceLightTheme.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC0463F2BB4B3750036C05F /* ServiceLightTheme.png */; };
+		ECC046422BB4B3750036C05F /* ServiceDarkTheme.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC046402BB4B3750036C05F /* ServiceDarkTheme.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		EC3CB98B2BB35769009E214A /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
 		EC3CB9902BB35A08009E214A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EC3CB9972BB36DAB009E214A /* UIImageView+Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Url.swift"; sourceTree = "<group>"; };
+		ECC0463F2BB4B3750036C05F /* ServiceLightTheme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ServiceLightTheme.png; sourceTree = "<group>"; };
+		ECC046402BB4B3750036C05F /* ServiceDarkTheme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ServiceDarkTheme.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		EC3CB9872BB34E9F009E214A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ECC0463E2BB4B36A0036C05F /* Screens */,
 				EC3CB9772BB34BA5009E214A /* LaunchScreen.storyboard */,
 				EC3CB9752BB34BA5009E214A /* Assets.xcassets */,
 				EC3CB97A2BB34BA5009E214A /* Info.plist */,
@@ -119,6 +124,15 @@
 				EC3CB9892BB350AF009E214A /* ServicesItemsCell.swift */,
 			);
 			path = ServicesScreens;
+			sourceTree = "<group>";
+		};
+		ECC0463E2BB4B36A0036C05F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				ECC046402BB4B3750036C05F /* ServiceDarkTheme.png */,
+				ECC0463F2BB4B3750036C05F /* ServiceLightTheme.png */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC3CB9762BB34BA5009E214A /* Assets.xcassets in Resources */,
+				ECC046422BB4B3750036C05F /* ServiceDarkTheme.png in Resources */,
+				ECC046412BB4B3750036C05F /* ServiceLightTheme.png in Resources */,
 				EC3CB9792BB34BA5009E214A /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
