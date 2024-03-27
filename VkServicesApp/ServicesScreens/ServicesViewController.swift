@@ -14,9 +14,7 @@ final class ServicesViewController: UIViewController {
 
     var services: [Service] = [] {
         didSet {
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
+            self.tableView.reloadData()
         }
     }
 
@@ -42,17 +40,7 @@ final class ServicesViewController: UIViewController {
         setupViews()
         setupLayout()
         configTableView()
-
-        networkManager.fetchData { [weak self] result in
-            guard let self else { return }
-
-            switch result {
-            case .success(let success):
-                self.services = success.body.services
-            case .failure(let failure):
-                print(failure)
-            }
-        }
+        fetchServices()
     }
     private func setupViews() {
         title = "Сервисы"
@@ -73,6 +61,30 @@ final class ServicesViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(ServicesItemsCell.self, forCellReuseIdentifier: "ItemsCell")
     }
+
+    private func showDecodingErrorAlert(for error: NetworkError) {
+        let alert = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "ОК", style: .default))
+        alert.addAction(UIAlertAction(title: "Повторить", style: .default, handler: { _ in
+            self.fetchServices()
+        }))
+        self.present(alert, animated: true)
+    }
+
+    private func fetchServices() {
+        networkManager.fetchData { [weak self] result in
+            guard let self else { return }
+            
+            DispatchQueue.main.async {
+                switch result {
+                case let .success(services):
+                    self.services = services.body.services
+                case let .failure(error):
+                    self.showDecodingErrorAlert(for: error)
+                }
+            }
+        }
+    }
 }
 
 extension ServicesViewController: UITableViewDelegate {
@@ -88,7 +100,7 @@ extension ServicesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return services.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(
             withIdentifier: "ItemsCell",
