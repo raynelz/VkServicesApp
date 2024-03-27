@@ -1,6 +1,6 @@
 # Тестовое задание для ВКонтакте
 
-<img src="VkServicesApp/Resources/Screens/ServiceDarkTheme.png" alt="Логотип" width="430" height="932"> <img src="VkServicesApp/Resources/Screens/ServiceLightTheme.png" alt="Логотип" width="430" height="932">
+<img src="VkServicesApp/Resources/Screens/ServiceDarkTheme.png" alt="Логотип" width="375" height="812"> <img src="VkServicesApp/Resources/Screens/ServiceLightTheme.png" alt="Логотип" width="375" height="812">
 
 ## Описание
 
