@@ -10,6 +10,8 @@ import SnapKit
 
 final class ServicesItemsCell: UITableViewCell {
 
+    static let cellID = "ServicesItemsCell"
+
     private lazy var progressView: UIActivityIndicatorView = {
         let progressView = UIActivityIndicatorView()
         progressView.style = .medium

@@ -59,7 +59,7 @@ final class ServicesViewController: UIViewController {
     private func configTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(ServicesItemsCell.self, forCellReuseIdentifier: "ItemsCell")
+        tableView.register(ServicesItemsCell.self, forCellReuseIdentifier: ServicesItemsCell.cellID)
     }
 
     private func showDecodingErrorAlert(for error: NetworkError) {
@@ -103,7 +103,7 @@ extension ServicesViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(
-            withIdentifier: "ItemsCell",
+            withIdentifier: ServicesItemsCell.cellID,
             for: indexPath
         ) as? ServicesItemsCell else { return UITableViewCell() }
         cell.configure(with: services[indexPath.row])
