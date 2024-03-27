@@ -21,7 +21,7 @@ protocol NetworkManagerProtocol {
 
 final class NetworkManager: NetworkManagerProtocol {
     func fetchData(completion: @escaping (Result<ServiceModel, NetworkError>) -> Void) {
-        if let urlString = URL(string:"https://publicstorage.hb.bizmrg.com/sirius/result.json") {
+        if let urlString = URL(string: "https://publicstorage.hb.bizmrg.com/sirius/result.json") {
             let request = URLRequest(url: urlString)
             
             let decoder = JSONDecoder()

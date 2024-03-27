@@ -79,8 +79,10 @@ extension ServicesViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        print("ТЫК")
+        if let url = URL(string: services[indexPath.row].link) {
+            UIApplication.shared.open(url)
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
 }
 
