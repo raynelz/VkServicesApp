@@ -131,7 +131,7 @@
 				EC3CB9652BB34BA4009E214A /* Sources */,
 				EC3CB9662BB34BA4009E214A /* Frameworks */,
 				EC3CB9672BB34BA4009E214A /* Resources */,
-				EC3CB9832BB34C05009E214A /* Swiftlint */,
+				EC8D2DD12BB49F490000F496 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -194,7 +194,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		EC3CB9832BB34C05009E214A /* Swiftlint */ = {
+		EC8D2DD12BB49F490000F496 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;

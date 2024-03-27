@@ -25,22 +25,17 @@ final class ServicesItemsCell: UITableViewCell {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .label
-        label.font = .systemFont(ofSize: 16, weight: .semibold)
+        label.font = .systemFont(ofSize: 18, weight: .semibold)
         return label
     }()
 
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
-        label.numberOfLines = 3
-        label.font = .systemFont(ofSize: 12)
+        label.numberOfLines = 0
+        label.font = .systemFont(ofSize: 16)
         label.textColor = .secondaryLabel
         return label
     }()
-
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
-    }
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -69,26 +64,30 @@ final class ServicesItemsCell: UITableViewCell {
     }
 
     private func setupLayout() {
-        progressView.snp.makeConstraints({
-            $0.edges.equalToSuperview()
-        })
+            progressView.snp.makeConstraints({
+                $0.edges.equalToSuperview()
+            })
 
-        iconImageView.snp.makeConstraints({
-            $0.leading.equalToSuperview().offset(10)
-            $0.height.width.equalTo(60)
-        })
+            iconImageView.snp.makeConstraints({
+                $0.leading.equalToSuperview().offset(10)
+                $0.height.width.equalTo(60)
+                $0.top.equalToSuperview().inset(10)
+                $0.bottom.lessThanOrEqualToSuperview().offset(-10)
+            })
 
-        titleLabel.snp.makeConstraints({
-            $0.leading.equalTo(iconImageView.snp.trailing).offset(15)
-        })
+            titleLabel.snp.makeConstraints({
+                $0.top.equalTo(iconImageView.snp.top)
+                $0.leading.equalTo(iconImageView.snp.trailing).offset(15)
+                $0.trailing.lessThanOrEqualToSuperview().offset(-10)
+            })
 
-        descriptionLabel.snp.makeConstraints({
-            $0.top.equalTo(titleLabel.snp.bottom).offset(5)
-            $0.leading.equalTo(titleLabel.snp.leading)
-            $0.trailing.equalToSuperview()
-        })
-    }
-
+            descriptionLabel.snp.makeConstraints {
+                $0.top.equalTo(titleLabel.snp.bottom).offset(5)
+                $0.leading.equalTo(titleLabel.snp.leading)
+                $0.trailing.equalToSuperview().offset(-10)
+                $0.bottom.equalToSuperview().offset(-10)
+            }
+        }
     private func startAnimation() {
         progressView.startAnimating()
     }

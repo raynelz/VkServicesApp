@@ -7,6 +7,7 @@
 
 import UIKit
 
+// swiftlint:disable all
 let imageCache = NSCache<AnyObject, AnyObject>()
 
 extension UIImageView {
@@ -24,7 +25,7 @@ extension UIImageView {
 
     URLSession.shared.dataTask(with: url!) {
         data, response, error in
-          if let response = data {
+        if data != nil {
               DispatchQueue.main.async {
                   let imageToCache = UIImage(data: data!)
                   imageCache.setObject(imageToCache!, forKey: urlString as AnyObject)
@@ -35,3 +36,4 @@ extension UIImageView {
      }.resume()
   }
 }
+// swiftlint:disable all

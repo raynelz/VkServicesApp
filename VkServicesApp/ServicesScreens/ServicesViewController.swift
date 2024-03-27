@@ -23,6 +23,8 @@ final class ServicesViewController: UIViewController {
     private lazy var tableView: UITableView = {
         let table = UITableView(frame: .zero, style: .plain)
         table.backgroundColor = .clear
+        table.estimatedRowHeight = 80
+        table.rowHeight = UITableView.automaticDimension
         return table
     }()
 
@@ -74,10 +76,6 @@ final class ServicesViewController: UIViewController {
 }
 
 extension ServicesViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
-    }
-
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let url = URL(string: services[indexPath.row].link) {
             UIApplication.shared.open(url)
