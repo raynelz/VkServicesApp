@@ -1,5 +1,7 @@
 # Тестовое задание для ВКонтакте
 
+<img src="VkServicesApp/Resources/Screens/ServiceDarkTheme.png" alt="Логотип" width="430" height="932"> <img src="VkServicesApp/Resources/Screens/ServiceLightTheme.png" alt="Логотип" width="430" height="932">
+
 ## Описание
 
 Это тестовое задание разработано для демонстрации навыков программирования на Swift, использования UIKit, SnapKit, SwiftLint, а также для демонстрации умения работать с динамическими ячейками в UITableView, кешированием изображений и обработкой ошибок с помощью алертов. Приложение поддерживает адаптивные темные и светлые темы и оптимизировано для iOS 17.
