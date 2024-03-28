@@ -2,7 +2,7 @@
 //  ServiceModel.swift
 //  VkServicesApp
 //
-//  Created by Захар Литвинчук on 26.03.2024.
+//  Created by Захар Литвинчук on 28.03.2024.
 //
 
 import Foundation

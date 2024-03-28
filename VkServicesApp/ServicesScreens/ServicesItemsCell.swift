@@ -2,7 +2,7 @@
 //  itemsCell.swift
 //  VkServicesApp
 //
-//  Created by Захар Литвинчук on 26.03.2024.
+//  Created by Захар Литвинчук on 28.03.2024.
 //
 
 import UIKit
@@ -66,30 +66,31 @@ final class ServicesItemsCell: UITableViewCell {
     }
 
     private func setupLayout() {
-            progressView.snp.makeConstraints({
-                $0.edges.equalToSuperview()
-            })
+        progressView.snp.makeConstraints({
+            $0.edges.equalToSuperview()
+        })
 
-            iconImageView.snp.makeConstraints({
-                $0.leading.equalToSuperview().offset(10)
-                $0.height.width.equalTo(60)
-                $0.top.equalToSuperview().inset(10)
-                $0.bottom.lessThanOrEqualToSuperview().offset(-10)
-            })
+        iconImageView.snp.makeConstraints({
+            $0.leading.equalToSuperview().offset(10)
+            $0.height.width.equalTo(60)
+            $0.top.equalToSuperview().inset(10)
+            $0.bottom.lessThanOrEqualToSuperview().offset(-10)
+        })
 
-            titleLabel.snp.makeConstraints({
-                $0.top.equalTo(iconImageView.snp.top)
-                $0.leading.equalTo(iconImageView.snp.trailing).offset(15)
-                $0.trailing.lessThanOrEqualToSuperview().offset(-10)
-            })
+        titleLabel.snp.makeConstraints({
+            $0.top.equalTo(iconImageView.snp.top)
+            $0.leading.equalTo(iconImageView.snp.trailing).offset(15)
+            $0.trailing.lessThanOrEqualToSuperview().offset(-10)
+        })
 
-            descriptionLabel.snp.makeConstraints {
-                $0.top.equalTo(titleLabel.snp.bottom).offset(5)
-                $0.leading.equalTo(titleLabel.snp.leading)
-                $0.trailing.equalToSuperview().offset(-10)
-                $0.bottom.equalToSuperview().offset(-10)
-            }
+        descriptionLabel.snp.makeConstraints {
+            $0.top.equalTo(titleLabel.snp.bottom).offset(5)
+            $0.leading.equalTo(titleLabel.snp.leading)
+            $0.trailing.equalToSuperview().offset(-10)
+            $0.bottom.equalToSuperview().offset(-10)
         }
+    }
+
     private func startAnimation() {
         progressView.startAnimating()
     }

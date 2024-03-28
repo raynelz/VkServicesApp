@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  VkServicesApp
 //
-//  Created by Захар Литвинчук on 26.03.2024.
+//  Created by Захар Литвинчук on 28.03.2024.
 //
 
 import UIKit
@@ -42,6 +42,7 @@ final class ServicesViewController: UIViewController {
         configTableView()
         fetchServices()
     }
+
     private func setupViews() {
         title = "Сервисы"
         view.backgroundColor = .systemBackground
@@ -62,15 +63,6 @@ final class ServicesViewController: UIViewController {
         tableView.register(ServicesItemsCell.self, forCellReuseIdentifier: ServicesItemsCell.cellID)
     }
 
-    private func showDecodingErrorAlert(for error: NetworkError) {
-        let alert = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "ОК", style: .default))
-        alert.addAction(UIAlertAction(title: "Повторить", style: .default, handler: { _ in
-            self.fetchServices()
-        }))
-        self.present(alert, animated: true)
-    }
-
     private func fetchServices() {
         networkManager.fetchData { [weak self] result in
             guard let self else { return }
@@ -80,7 +72,9 @@ final class ServicesViewController: UIViewController {
                 case let .success(services):
                     self.services = services.body.services
                 case let .failure(error):
-                    self.showDecodingErrorAlert(for: error)
+                    self.showDecodingErrorAlert(for: error) {
+                        self.fetchServices()
+                    }
                 }
             }
         }
