@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC3CB96D2BB34BA4009E214A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB96C2BB34BA4009E214A /* AppDelegate.swift */; };
+		EC3CB96F2BB34BA4009E214A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB96E2BB34BA4009E214A /* SceneDelegate.swift */; };
+		EC3CB9712BB34BA4009E214A /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB9702BB34BA4009E214A /* ServicesViewController.swift */; };
+		EC3CB9762BB34BA5009E214A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3CB9752BB34BA5009E214A /* Assets.xcassets */; };
+		EC3CB9792BB34BA5009E214A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EC3CB9782BB34BA5009E214A /* Base */; };
+		EC3CB9822BB34BFD009E214A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC3CB9812BB34BFD009E214A /* SnapKit */; };
+		EC3CB9862BB34D75009E214A /* UIView+AddSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB9852BB34D75009E214A /* UIView+AddSubviews.swift */; };
+		EC3CB98A2BB350AF009E214A /* ServicesItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB9892BB350AF009E214A /* ServicesItemsCell.swift */; };
+		EC3CB98C2BB35769009E214A /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB98B2BB35769009E214A /* ServiceModel.swift */; };
+		EC3CB9912BB35A08009E214A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB9902BB35A08009E214A /* NetworkManager.swift */; };
+		EC3CB9982BB36DAB009E214A /* UIImageView+Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CB9972BB36DAB009E214A /* UIImageView+Url.swift */; };
+		ECB6BE212BB5ACCD003FC394 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB6BE202BB5ACCD003FC394 /* UIViewController+Alert.swift */; };
+		ECC046412BB4B3750036C05F /* ServiceLightTheme.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC0463F2BB4B3750036C05F /* ServiceLightTheme.png */; };
+		ECC046422BB4B3750036C05F /* ServiceDarkTheme.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC046402BB4B3750036C05F /* ServiceDarkTheme.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC3CB9692BB34BA4009E214A /* VkServicesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkServicesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3CB96C2BB34BA4009E214A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC3CB96E2BB34BA4009E214A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EC3CB9702BB34BA4009E214A /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		EC3CB9752BB34BA5009E214A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC3CB9782BB34BA5009E214A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC3CB97A2BB34BA5009E214A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3CB9852BB34D75009E214A /* UIView+AddSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AddSubviews.swift"; sourceTree = "<group>"; };
+		EC3CB9892BB350AF009E214A /* ServicesItemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesItemsCell.swift; sourceTree = "<group>"; };
+		EC3CB98B2BB35769009E214A /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		EC3CB9902BB35A08009E214A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EC3CB9972BB36DAB009E214A /* UIImageView+Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Url.swift"; sourceTree = "<group>"; };
+		ECB6BE202BB5ACCD003FC394 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		ECC0463F2BB4B3750036C05F /* ServiceLightTheme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ServiceLightTheme.png; sourceTree = "<group>"; };
+		ECC046402BB4B3750036C05F /* ServiceDarkTheme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ServiceDarkTheme.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC3CB9662BB34BA4009E214A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3CB9822BB34BFD009E214A /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC3CB9602BB34BA4009E214A = {
+			isa = PBXGroup;
+			children = (
+				EC3CB96B2BB34BA4009E214A /* VkServicesApp */,
+				EC3CB96A2BB34BA4009E214A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC3CB96A2BB34BA4009E214A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC3CB9692BB34BA4009E214A /* VkServicesApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC3CB96B2BB34BA4009E214A /* VkServicesApp */ = {
+			isa = PBXGroup;
+			children = (
+				EC3CB9882BB34EB3009E214A /* Application */,
+				EC3CB98D2BB3589F009E214A /* Network Layer */,
+				EC3CB98F2BB35908009E214A /* ServicesScreens */,
+				EC3CB9842BB34C93009E214A /* Extensions */,
+				EC3CB9872BB34E9F009E214A /* Resources */,
+			);
+			path = VkServicesApp;
+			sourceTree = "<group>";
+		};
+		EC3CB9842BB34C93009E214A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC3CB9852BB34D75009E214A /* UIView+AddSubviews.swift */,
+				EC3CB9972BB36DAB009E214A /* UIImageView+Url.swift */,
+				ECB6BE202BB5ACCD003FC394 /* UIViewController+Alert.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EC3CB9872BB34E9F009E214A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECC0463E2BB4B36A0036C05F /* Screens */,
+				EC3CB9772BB34BA5009E214A /* LaunchScreen.storyboard */,
+				EC3CB9752BB34BA5009E214A /* Assets.xcassets */,
+				EC3CB97A2BB34BA5009E214A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC3CB9882BB34EB3009E214A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EC3CB96C2BB34BA4009E214A /* AppDelegate.swift */,
+				EC3CB96E2BB34BA4009E214A /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EC3CB98D2BB3589F009E214A /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				EC3CB98B2BB35769009E214A /* ServiceModel.swift */,
+				EC3CB9902BB35A08009E214A /* NetworkManager.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		EC3CB98F2BB35908009E214A /* ServicesScreens */ = {
+			isa = PBXGroup;
+			children = (
+				EC3CB9702BB34BA4009E214A /* ServicesViewController.swift */,
+				EC3CB9892BB350AF009E214A /* ServicesItemsCell.swift */,
+			);
+			path = ServicesScreens;
+			sourceTree = "<group>";
+		};
+		ECC0463E2BB4B36A0036C05F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				ECC046402BB4B3750036C05F /* ServiceDarkTheme.png */,
+				ECC0463F2BB4B3750036C05F /* ServiceLightTheme.png */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC3CB9682BB34BA4009E214A /* VkServicesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC3CB97D2BB34BA5009E214A /* Build configuration list for PBXNativeTarget "VkServicesApp" */;
+			buildPhases = (
+				EC3CB9652BB34BA4009E214A /* Sources */,
+				EC3CB9662BB34BA4009E214A /* Frameworks */,
+				EC3CB9672BB34BA4009E214A /* Resources */,
+				EC8D2DD12BB49F490000F496 /* Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VkServicesApp;
+			packageProductDependencies = (
+				EC3CB9812BB34BFD009E214A /* SnapKit */,
+			);
+			productName = VkServicesApp;
+			productReference = EC3CB9692BB34BA4009E214A /* VkServicesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC3CB9612BB34BA4009E214A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					EC3CB9682BB34BA4009E214A = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = EC3CB9642BB34BA4009E214A /* Build configuration list for PBXProject "VkServicesApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC3CB9602BB34BA4009E214A;
+			packageReferences = (
+				EC3CB9802BB34BFD009E214A /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = EC3CB96A2BB34BA4009E214A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC3CB9682BB34BA4009E214A /* VkServicesApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC3CB9672BB34BA4009E214A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3CB9762BB34BA5009E214A /* Assets.xcassets in Resources */,
+				ECC046422BB4B3750036C05F /* ServiceDarkTheme.png in Resources */,
+				ECC046412BB4B3750036C05F /* ServiceLightTheme.png in Resources */,
+				EC3CB9792BB34BA5009E214A /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EC8D2DD12BB49F490000F496 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC3CB9652BB34BA4009E214A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB6BE212BB5ACCD003FC394 /* UIViewController+Alert.swift in Sources */,
+				EC3CB9862BB34D75009E214A /* UIView+AddSubviews.swift in Sources */,
+				EC3CB98C2BB35769009E214A /* ServiceModel.swift in Sources */,
+				EC3CB9712BB34BA4009E214A /* ServicesViewController.swift in Sources */,
+				EC3CB9912BB35A08009E214A /* NetworkManager.swift in Sources */,
+				EC3CB9982BB36DAB009E214A /* UIImageView+Url.swift in Sources */,
+				EC3CB96D2BB34BA4009E214A /* AppDelegate.swift in Sources */,
+				EC3CB96F2BB34BA4009E214A /* SceneDelegate.swift in Sources */,
+				EC3CB98A2BB350AF009E214A /* ServicesItemsCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC3CB9772BB34BA5009E214A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC3CB9782BB34BA5009E214A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC3CB97B2BB34BA5009E214A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC3CB97C2BB34BA5009E214A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC3CB97E2BB34BA5009E214A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6KB2A8YM9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VkServicesApp/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.raynelz.VkServicesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC3CB97F2BB34BA5009E214A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6KB2A8YM9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VkServicesApp/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.raynelz.VkServicesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC3CB9642BB34BA4009E214A /* Build configuration list for PBXProject "VkServicesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3CB97B2BB34BA5009E214A /* Debug */,
+				EC3CB97C2BB34BA5009E214A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC3CB97D2BB34BA5009E214A /* Build configuration list for PBXNativeTarget "VkServicesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3CB97E2BB34BA5009E214A /* Debug */,
+				EC3CB97F2BB34BA5009E214A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC3CB9802BB34BFD009E214A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC3CB9812BB34BFD009E214A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC3CB9802BB34BFD009E214A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EC3CB9612BB34BA4009E214A /* Project object */;
+}
