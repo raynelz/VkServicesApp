@@ -9,7 +9,6 @@ import UIKit
 import SnapKit
 
 final class ServicesViewController: UIViewController {
-
     let networkManager: NetworkManagerProtocol
 
     var services: [Service] = [] {
